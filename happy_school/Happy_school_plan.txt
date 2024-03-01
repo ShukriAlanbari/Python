@@ -1,0 +1,46 @@
+Facts (input) : 
+_______________
+
+1- We shall do the Back-End only.
+2- We have 3 different objects (Admin , 
+    Teacher and student)
+3- Reading "basic" indicate that we have 
+    to consider extra changes and 
+    requests in  back- end part.
+4- we have list of basic attributer we shall
+    include into our objects : 
+    (name => first name and last name
+    age, 
+    address => street name , house /app num,
+                city name , zip_code
+    mobile number)
+
+Requests (output):
+__________________
+1- Create administration, teacher, 
+    and student. (OOP or Functional).
+2- Add students to teacher as student group.
+    we need to create student_group 
+    as an object
+    --> (OOP).
+3- Add student to classroom.
+    we need new object called class_room
+    --> (OOP or Functional)
+4- Print list of students in classroom.
+    --> (OOP or Functional)
+5- Print student group belong to the teacher.
+    --> (OOP or Functional)
+
+Conclusion:
+___________
+ ==> 80% OOP , 20% Functional
+
+Coding sequence :
+__________________
+
+1- address : because it is an 
+    attribute in Teacher , Student and administration classes
+2- administration , Teacher or Student 
+    ( Create base class Person and inherit till these classes)
+3- classroom or student_group because it needs 
+    both student and teachers as attributes 

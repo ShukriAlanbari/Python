@@ -1,0 +1,23 @@
+﻿* input:                                                                                           * Class player:
+- player name                                                                                 *  attribute: 
+- choices: sten, sax,, påse                                                               - player name
+                                                                                                       - player choice
+                                                                                                       - player score
+
+                                                                                                       * methods:
+                                                                                                       - onstructor
+                                                                                                       - add.score()
+                                                                                                       - get.choice()
+
+
+
+* Output:                                                                                     * Class Game:
+- player name                                                                              * attribute: 
+- welcome message                                                                    - players (player1 och player2)
+- result per match                                                                       
+- score per player.                                                                      
+
+                                                                                                    * methods: 
+                                                                                                    - game logic
+                                                                                                    - winner
+                                                                                                     

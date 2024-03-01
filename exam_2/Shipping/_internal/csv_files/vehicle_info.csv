@@ -1,0 +1,4 @@
+id,name,max_capacity_kg,max_capacity_items,location,type,status
+001ABC,Bike1,10,2,"18.6435,59.3326,Sweden","Bike",Free
+133rrr,asd,3000,100,"18.6435, 59.3326, Sweden",Truck,Free
+770dsa,asdf,10,2,"18.6435, 59.3326, Sweden",Boat,Free

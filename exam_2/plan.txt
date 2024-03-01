@@ -1,0 +1,56 @@
+Define the Classes and Attributes:
+
+Create the User class with attributes: ID, full name, address, mobile number, email address, password, and a path to the CSV file for the user database.
+Create the Customer class with attributes: ID, company name, company address, reference person's full name, reference person's mobile number, reference person's email address, company invoices email address, and a list of related user IDs.
+Create the Item class with attributes: price per kg, volume, weight, and type.
+Create the Vehicle class with attributes: type (Bike, Truck, or Ship), maximum item capacity, and maximum weight capacity.
+User Registration:
+
+Implement a user registration system that allows users to create an account. Ensure that the password meets the specified criteria.
+Store user data in the CSV file specified in the User class.
+Customer Registration:
+
+Implement a customer registration system for corporate customers. This should allow them to provide company-related information and associate related users.
+Store customer data in the CSV file specified in the Customer class.
+Order Creation:
+
+Create a class to represent an order. An order should include a list of items, the customer who placed the order, and the destination.
+Item Management:
+
+Implement item management functionalities to add, remove, or modify items. Each item should have price per kg, volume, weight, and type (fragile, solid).
+Order Placement:
+
+Implement a system that allows registered users (both individual and corporate) to place orders. Users should select items and specify the destination.
+Calculate the cost of the order based on the cost of each item.
+Order Tracking:
+
+Create a feature that allows users to track their orders. Users should be able to check the status and location of their orders.
+Vehicle Management:
+
+Implement vehicle management functionalities for bikes, trucks, and ships. Ensure that each type of vehicle can carry the specified maximum number of items and weight.
+Order Shipping:
+
+Develop a process to ship orders using the appropriate vehicles (bikes, trucks, or ships) based on the order's characteristics (size, weight).
+Update the status of orders during shipping.
+Customer Billing:
+
+Implement a billing system for customers. Charge customers for delivering their items based on the cost of the order.
+Data Storage and Retrieval:
+
+Create functions to read and write data to the CSV files associated with users and customers. This ensures that user and customer data is persistent.
+User Interface (Optional):
+
+Create a simple user interface, such as a command-line interface, to interact with the system. This allows users to register, place orders, and track orders more easily.
+Testing:
+
+Thoroughly test the system to ensure that it works as expected, including user registration, order placement, order tracking, and billing.
+Documentation:
+
+Document the code and create user guides or manuals to help users and administrators understand how to use the system.
+Deployment (Optional):
+
+If needed, deploy the system on a server to make it accessible to users over the internet.
+Maintenance and Updates:
+
+Plan for ongoing maintenance and updates to the system based on user feedback and changing requirements.
+This step-by-step plan outlines the development process for the logistics system with the basic functionality you described. You can break down each step into smaller tasks and begin implementing the system.

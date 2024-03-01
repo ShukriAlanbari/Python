@@ -1,0 +1,159 @@
+Project 1 - Library System:
+
+1- Planning = 9:30 -10:00
+2- Rast till 10:15
+3- Presentera plan per grupp till 10:45
+4- Rast till 11:00
+5- Programmera back end - Classes 11:00-14:00 inkl. Lunch 12:00-13:00
+6- Programmera front end från och med 14:00 till imorgon tisdag 13:00
+7- Komplettering på tisdag till 15:00
+8- Presentationer från 15:00 till 17:00
+
+
+  ============================================================================
+
+
+Todo in groups:  
+1- In a group: write down your plan that answers the
+   questions A-D and present it – 60 min. 
+
+2- Create the classes as back-end – 4 hours. 
+
+3- Build the front-end for this project - 8 hours. 
+
+4- Present your solution to the classroom. 
+
+
+
+To be able to start with this system we need to think about: 
+
+A. What are the main classes? What is the best integration between them. taking in 
+consideration future integration with school system that has already employees and student 
+in their management system.
+
+B. As we don’t have access yet to permanent database and files, which python data type is the 
+best to save info about teachers, students, Literature books, Science books, Entertainment 
+books to manage borrow and return operations. 
+
+C. What are the methods and attributes we need to be able to manage all operations /methods 
+requested? 
+
+D. Where should we start? Books classes, student class or teacher class or general borrower 
+class?
+
+
+
+Approach:
+
+Classes:
+    Masterclass = Borrower():
+    Contains info about the specific borrower.
+    Will be divided into two subclasses:
+    Attr.:
+        Name
+        Phone Number
+        Age
+        ID (Will identify Teacher or Student)
+
+            Subclass = Teacher(Borrower):
+            Subclass = Student(Borrower):
+
+    Masterclass = Book():
+    Will be divided into three subclasses, one for
+    each booktype:
+    Attr.:
+        StudentPrice
+        TeacherPrice
+        Fine            (<-- Not returned on time)
+                        (If 3 times not returned on time
+                        will mean person not allowed to
+                        borrow again)
+        BorrowWeeksMax
+        Title = ""
+
+            Subclass = LiteratureBook(Book):
+                self.StudentPrice = 0
+                self.TeacherPrice = 10
+                self.BorrowTimeMax = 4
+
+            Subclass = ScienceBook(Book):
+                self.StudentPrice = 5
+                self.TeacherPrice = 15
+                self.BorrowTimeMax = 4 & 2 
+                (One for Student, One for Teacher)
+
+            Subclass = EntertainmentBook(Book):
+                self.StudentPrice = 0
+                self.TeacherPrice = 0
+                self.BorrowTimeMax = 3
+
+    LibSys():
+    Will manage payments,
+    borrowing info (who borrowed,
+    what price and how long)
+    along with general management.
+
+
+
+==============================================================================
+
+Known bugs: 
+    - Validation for Book title (Should not allow empty names)
+
+
+
+
+
+
+
+
+==============================================================================
+
+WIP(Work in Progress):
+    -PROMPT_MENU:
+
+        Welcome to Libary, choose one of these options: 
+        
+        1- Register New User ---------> (choose) Register Teach/Stud
+            Register Teacher/Student?:
+            1- Teacher
+                Enter necessary details (get from Eric, Shukri)
+            2- Student
+                Enter necessary details (get from Eric, Shukri)
+
+        2- LOGIN as Student ----------> (choose) Borrow/Return
+            Student choose:
+            1- Borrow
+                Ask for title
+                    Book available / Book not available
+            2- Return
+                Ask for title
+                    Book returned on time / Book not returned on time
+                    / Book already returned
+
+        3- LOGIN as Teacher ----------> (choose) Borrow/Return
+            Student choose:
+            1- Borrow
+                Ask for title
+                    Book available / Book not available
+            2- Return
+                Ask for title
+                    Book returned on time / Book not returned on time
+                    / Book already returned
+
+        4- Add new book to library ---> Enter title & ISBN (Validation)
+            Title of book? ->:
+                Title OK / Title not OK (length < 1)
+            ISBN? ->:
+                ISBN OK / ISBN not OK (ISBN not 10 or 13 digits)
+
+        6- Print out all books -------> Print out list of all books, alphaorder
+            Choose:
+            1- Print all books
+                (Shows all books, including non-available books)
+            2- Print all available books
+                (Shows only available books)
+
+        7- (Anything else?)
+
+        8- Exit
